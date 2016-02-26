@@ -15,7 +15,16 @@ header
 }
 header h1
 {
+	text-shadow: 5px 5px  10px black;
 	text-align: center;
+
+}
+header img
+{
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
+	width:100px;
 }
 
 header nav ul li
@@ -23,13 +32,27 @@ header nav ul li
 	/*border: 1px solid black;*/
 	background: black;
 	border-radius: 5px;
+	box-shadow: -5px -5px white; /*sombra de caja	*/
 	color:white;
 	display: inline-block; /*rompe caja*/
-	margin: 0px 50px;
+	margin: 0px 30px;
 	padding: 10px ;
 }
 header nav ul li:hover
 {
 	background:white;
 	color: black;
+}
+
+/*Aquí van los id*/
+#seccion1
+{
+	border: 1px solid red;
+}
+#seccion1 article
+{
+	border: 1px solid black;
+	display: inline-block;
+	vertical-align: top;
+	width:47.8%;
 }
