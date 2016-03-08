@@ -15,8 +15,9 @@ header
 }
 header h1
 {
-	text-shadow: 5px 5px  10px black;
+	text-shadow: 5px 5px  5px black;
 	text-align: center;
+	font-family: 'Pacifico', cursive;
 
 }
 header img
@@ -35,13 +36,16 @@ header nav ul li
 	box-shadow: -5px -5px white; /*sombra de caja	*/
 	color:white;
 	display: inline-block; /*rompe caja*/
+	font-family: 'Muli', sans-serif;
 	margin: 0px 30px;
 	padding: 10px ;
+
 }
 header nav ul li:hover
 {
 	background:white;
 	color: black;
+
 }
 
 /*Aquí van los id*/
@@ -53,6 +57,20 @@ header nav ul li:hover
 {
 	border: 1px solid black;
 	display: inline-block;
+	font-family: 'Josefin Sans', sans-serif;
 	vertical-align: top;
 	width:47.8%;
+}
+
+#seccion2
+{
+	font-family: 'Quicksand', sans-serif;
+}
+#seccion3
+{
+	font-family: 'Dancing Script', cursive;
+}
+#seccion4
+{
+	font-family: 'Sigmar One', cursive;
 }
