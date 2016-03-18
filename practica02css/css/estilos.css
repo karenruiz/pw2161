@@ -1,0 +1,96 @@
+body 
+{
+	border: 1px solid red;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1078px; /*El diseñador lo quiso*/
+
+}
+
+header input
+{
+	float:right;
+	margin-right: -20%;
+	position:relative;
+}
+header nav 
+{
+	margin-left: 220px;
+}
+
+header nav ul li 
+{
+	border-bottom: 1px solid gray;
+	color: gray;
+	display:inline-block;
+	font-size: 1.8em;
+	margin-right: 15px;
+}
+
+#bgoffer
+{
+	left:22%;
+	/*left,top,bottom,right tipo coordenadas*/
+	position:absolute;
+	top:150px;
+
+}
+
+#granthams
+{
+	margin-left: 25px;
+	margin-top: 20px;
+}
+
+#paint 
+{
+	float:right;
+	margin-top: 20px;
+}
+
+#primerSeccion
+{
+	margin-top: 70px;
+}
+
+#primerSeccion article
+{
+	/*border-bottom: 1px solid red;*/
+	display:inline-block;
+	margin-left: 25px;
+	vertical-align: top;
+}
+
+#secc01art01
+{
+	width: 60%
+}
+/*#secc01art01 img
+{
+
+}
+*/
+#secc01art02
+{
+	widht:30%;
+}
+
+#segundaSeccion article
+{
+	text-align: right;
+}
+
+.numerotelefono
+{
+	color: #FF0099;
+	font-size: 2.5em;
+	font-weight: bold;
+	margin-right: 60px;
+}
+
+.wecanoffer
+{
+	color:#FF0099;
+	font-size: 3.5em;
+	font-weight: bold;
+}
