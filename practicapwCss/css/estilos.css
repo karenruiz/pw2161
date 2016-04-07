@@ -1,0 +1,118 @@
+body 
+{
+	border: 1px solid red;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px; /*El diseñador lo quiso*/
+
+}
+
+header
+{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+header nav 
+{
+	position: relative;
+	background-color: #FF4000;
+	border-radius: 5px;
+	margin-left: -15px;
+	margin-right: 5px;
+	margin-top: 40px;
+	padding: 0.1px;
+}
+header nav ul li 
+{
+	color: white;
+	display:inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	margin-right: 45px;
+	margin-left: -23px;
+}
+
+h1
+{
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+#article0101
+{
+	margin-left: 25px;
+	margin-top: 20px;
+}
+
+#article0102
+{
+	margin-left: 25px;
+	margin-top: 40px;
+
+}
+
+#article0102 div
+{
+	border: 1 px black;
+}
+
+#article0202
+{
+	width: 45%
+}
+
+
+
+#primerSeccion article
+{
+	display: inline-block;
+	vertical-align: top
+
+}
+
+#red1
+{
+	float:right;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+#red2
+{
+	float:right;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+#red3
+{
+	float:right;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+#segundaSeccion article
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+.naranja
+{
+	position: relative;
+	background-color: #FF4000;
+	border-radius: 20px;
+	color:white;
+	margin-left: 4px;
+	padding-left: 110px;
+	padding-right: 110px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+
