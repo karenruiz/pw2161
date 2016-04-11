@@ -8,10 +8,12 @@
 <body>
 	<header>
 		<img src="img/logo.jpg" alt="">
-		<img src="img/red1.png" alt="">
-		<img src="img/red2.png" alt="">
-		<img src="img/red3.png" alt="">
-		MI THEMA EN HTML5
+		<img src="img/red3.png" alt="" id="red1">
+		<img src="img/red2.png" alt="" id="red2">
+		<img src="img/red1.png" alt="" id="red3">
+		<br>
+		<h1>MI THEMA EN HTML5</h1>
+
 		<nav>
 			<ul>
 				<li>INICIO</li>
@@ -24,53 +26,70 @@
 			</ul>
 		</nav>
 	</header>
+	<main>
 	<section id="primerSeccion"> 
-		<article id="secc01art01">
+		<article id="article0101">
 			<img src="img/slider.jpg" alt="">
-		</article>
-		<article id="secc01art02">
-			<span id="tituloDelPost">Titulo del Post</span>
 			<br>
-			<span id="textoArt02">
-				<img src="img/img-post.jpg" alt="">
-				<span id="porAdmin">Por Admin El 30/05/2012. En Pruebas</span>
-				<br>
-				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat praesentium accusantium nostrum alias, repellat, delectus esse atque blanditiis quia ipsam quas vitae asperiores quis aspernatur velit ex totam pariatur natus.</span>
-				<br>
-				<input type="button" value="Leer Mas..">
-			</span>
+		 	<span class="tituloDelPost">Titulo del Post</span>
+		</article>
+		<article id="article0102">
+			<span class="naranja">Publicidad</span>
+			<br>
+			<div class="div">
+				<img src="img/publicidad.jpg" alt="" id="imgdiv1">
+				<img src="img/publicidad.jpg" alt=""id="imgdiv2">
+				<br>				
+				<img src="img/publicidad.jpg" alt="">
+				<img src="img/publicidad.jpg" alt="">	
+			</div>
 		</article>
 	</section>
-	<section id="segudaSeccion">
-		<article id="secc02art01">
-			<span id="naranja">Publicidad</span>
-			<br>
-			<img src="img/publicidad.jpg" alt="">
-			<img src="img/publicidad.jpg" alt="">
-			<br>
-			<img src="img/publicidad.jpg" alt="">
-			<img src="img/publicidad.jpg" alt="">
+	<section id="segundaSeccion">
+		<article id=article0201>
+			<img src="img/img-post.jpg" alt="">
 		</article>
-		<article id="secc02art02">
-			<span id="naranja">Buscador</span>
+		<article id="article0202">
+			<span class="porAdmin">Por Admin El 30/05/2012. En Pruebas</span>
+				<br>
+				<p id="texto">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat praesentium accusantium nostrum alias, repellat, delectus esse atque blanditiis quia ipsam quas vitae asperiores quis aspernatur velit ex totam pariatur natus.
+				</p>
+				<p>
+					<input id="botonLeerMas" type="submit" value="Leer Mas..">
+				</p>
+			</article>
+		
+		<article id="article0203">
+			<span class="naranja">Buscador</span>
 			<br>
-			<input type="text" value="Search...">
-			<input type="button" value="Go">
-		</article>
-		<article id="secc02art03">
-			<span id="naranja">Categorias</span>
-			<nav>
-				<ul>
-					<li>categoria 1</li>
-					<li>categoria 2</li>
-					<li>categoria 3</li>
-					<li>categoria 4</li>
-					<li>categoria 5</li>
-					<li>categoria 6</li>
-					<li>categoria 7</li>
-				</ul>
-			</nav>
+			<div class="div2">
+				<input class="input1"type="text" value="Search...">
+				<input class="input1"type="button" value="Go">
+			</div>
+				<br>
+				<span class="naranja">Categorias</span>
+				<div class=div3>
+					<nav>
+						<ul>
+							<li>categoria 1</li>
+							<li>categoria 2</li>
+							<li>categoria 3</li>
+							<li>categoria 4</li>
+							<li>categoria 5</li>
+							<li>categoria 6</li>
+							<li>categoria 7</li>
+						</ul>
+					</nav>
+				</div>
+			
 		</article>
 	</section>
+	<section id="tercerSeccion">
+		<article>
+			
+		</article>
+	</section>
+	</main>
 </body>
 </html>

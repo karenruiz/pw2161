@@ -1,0 +1,188 @@
+body 
+{
+	border: 1px solid red;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px; /*El diseñador lo quiso*/
+
+}
+
+header
+{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+header nav 
+{
+	position: relative;
+	background-color: #FF4000;
+	border-radius: 5px;
+	margin-left: -15px;
+	margin-right: 5px;
+	margin-top: 40px;
+	padding: 0.1px;
+}
+header nav ul li 
+{
+	color: white;
+	display:inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	margin-right: 45px;
+	margin-left: -23px;
+}
+
+h1
+{
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+#article0101
+{
+	margin-left: 25px;
+	margin-top: 20px;
+}
+
+#article0102
+{
+	margin-left: 25px;
+	margin-top: 40px;
+
+}
+
+#article0102 div
+{
+	border: 1 px black;
+}
+#article0101
+{
+
+	margin-left: 25px;
+	margin-top: 20px;
+}
+#article0201
+{
+	margin-left: 25px;
+	margin-top: 20px;
+	width: 20px;
+}
+
+#article0202
+{
+	margin-left: 155px;
+	margin-top: 26px;
+	width: 42%
+}
+#article0203
+{
+	margin-left: 35px;
+	margin-top: 15px;
+	width: 32%
+}
+
+#primerSeccion article
+{
+	display: inline-block;
+	vertical-align: top
+}
+
+#red1
+{
+	float:right;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+#red2
+{
+	float:right;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+#red3
+{
+	float:right;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+#segundaSeccion article
+{
+	display: inline-block;
+	vertical-align: top;
+}
+#imgdiv1
+{
+	margin-top: 25px;
+}
+#texto
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.8em;
+}
+#botonLeerMas
+{
+	border-radius: 3px 3px;
+	color:white;
+	padding: 5px;
+}
+.input1
+{
+	border-radius: 4px;
+	margin-bottom: 10px;
+	margin-left: 35px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+.div
+{
+	border: 1px solid gray;
+	border-radius: 5px;
+	margin-top: -4px;
+	padding: 2px;
+	padding-right: -22px;
+	margin-right: 10px;
+}
+.div2
+{
+	border: 1px solid gray;
+	border-radius: 5px;
+	margin-top: -4px;
+	padding: 2px;
+	margin-right: 10px;
+}
+.div3
+{
+	border: 1px solid gray;
+	border-radius: 5px;
+	margin-top: -4px;
+	padding: 2px;
+	margin-right: 10px;
+}
+.naranja
+{
+	position: relative;
+	background-color: #FF4000;
+	border-radius: 20px;
+	color:white;
+	padding-left: 120px;
+	padding-right: 120px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.tituloDelPost
+{
+	color:gray;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+
+
