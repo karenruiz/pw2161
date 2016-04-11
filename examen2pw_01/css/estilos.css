@@ -1,0 +1,105 @@
+body
+{
+	border: 1px solid red;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1078px; 
+}
+
+header
+{
+	border-bottom: 1px dashed gray;
+}
+
+header nav ul li 
+{
+	color: black;
+	display:inline-block;
+	font-size: 1em;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+
+#firstBike
+{
+	margin-top: 30px;
+	margin-left: 20px;
+}
+#firstSense
+{
+
+	font-family: 'Paytone One', sans-serif;
+	font-size: 4em;
+	font-weight: bold;
+
+}
+#balance
+{
+	color: yellowgreen;
+	font-family: 'Paytone One', sans-serif;
+	font-size: 4em;
+	font-weight: bold;
+
+}
+#bike
+{
+	width:38%;
+	float:right;
+	margin-top: -550px;
+	display: inline-block;
+}
+#goTo
+{
+	width:15%;
+	margin-top: 50px;
+
+}
+#buy
+{
+	 margin-left: 700px;
+	 margin-top: -200px;
+	 margin-bottom: 10px;
+	 width: 6%;
+}
+#seccion01 
+{
+	width:99%;
+	display: inline-block;
+	vertical-align: top;
+
+}
+#seccion02
+{
+	width:50%;
+}
+#articleSeccion01
+{
+	width:60%;
+}
+#articleSecion02
+{
+	width:30%;
+
+}
+
+#tituloLinea
+{
+	border-bottom: 1px dashed gray;
+}
+#videos 
+{
+	display: inline-block;
+}
+
+.logos
+{
+	float:right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.margen
+{
+	margin-left: 20px;
+	margin-top: 25px;
+}
