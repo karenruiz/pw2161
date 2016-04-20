@@ -1,0 +1,110 @@
+body
+{
+	
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+	text-align: center;
+}
+h1
+{ 
+	font-size: 4em;
+	margin-top: 1px;
+}
+form table input
+{
+	width: 150px;
+	height: 150px;
+	border: none;
+	position: absolute;
+	font-size: 100px;
+	color:black;
+	/*border:none;
+	border-collapse: collapse;
+	background: white;
+	padding: 80px;*/
+}
+table
+{
+	position:absolute;
+ 	width: 550px;
+ 	height: 550px;
+ 	left: 50%;
+ 	top: 60%;
+ 	margin-left: -275px;
+ 	margin-top: -275px;
+	/*border-collapse: collapse;
+	margin-left: 270px;
+	margin-top: 100px;*/
+}
+
+/*.clicked{
+ 	background-color: white;
+ 	border:1px solid red;
+}
+*/
+.bottons{
+	background-color: white;
+	border:3px solid red;
+}
+/*.bottons:HOVER {
+	background-color: white;
+}*/
+
+#b11
+{
+	border-top: 0px solid white;
+	border-left: 0px solid white;
+    top:25px;
+    left:25px;
+}
+#b12
+{
+	border-top: 0px solid white;
+    top:25px;
+    left:175px;
+}
+#b13
+{
+	border-top: 0px solid white;
+	border-right: 0px solid white;
+    top:25px;
+    left:325px;
+}
+#b21
+{
+	border-left: 0px solid white;
+    top:175px;
+    left:25px;
+}
+#b22
+{
+ top:175px;
+ left:175px;
+}
+#b23
+{
+	border-right: 0px solid white;
+    top:175px;
+    left:325px;
+}
+#b31
+{
+	border-left: 0px solid white;
+	border-bottom: 0px solid white;
+    top:325px;
+    left:25px;
+}
+#b32
+{
+	border-bottom: 0px solid white;
+    top:325px;
+    left:175px;
+}
+#b33
+{
+	border-bottom: 0px solid white;
+	border-right: 0px solid white;
+    top:325px;
+    left:325px;
+}
