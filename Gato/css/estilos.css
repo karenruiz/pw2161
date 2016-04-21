@@ -3,32 +3,65 @@ body
 	font-size: 16px;
 	margin: 0 auto;
 	max-width: 1024px;
-	text-align: center;
-}
-h1
-{ 
-	font-size: 4em;
-	margin-top: 100px;
-}
-form input
-{
-	border:none;
-	border-collapse: collapse;
-	background: white;
-	padding: 80px;
-}
-form table
-{
-	border-collapse: collapse;
-	margin-left: 270px;
-	margin-top: 100px;
 }
 
-.borde1
+h1
 {
-	border-right: 10px solid red;
+	margin-left: 280px;
+	font-size: 4em;
 }
-#borde2
+
+form
 {
-	border-bottom: 10px solid red;
+	border-collapse: collapse;
+	margin-left: 200px;
+
+}
+
+#b11
+{
+	border-left: none;
+	border-top: none;
+}
+
+#b12
+{
+	border-top: none;
+}
+#b13
+{
+	border-top: none;
+	border-right: none;
+}
+#b21
+{
+	border-left: none;
+}
+#b23
+{
+	border-right: none;
+}
+#b31
+{
+	border-left: none;
+	border-bottom: none;
+}
+#b32
+{
+	border-bottom: none;
+}
+#b33
+{
+	border-right: none;
+	border-bottom: none;
+}
+
+.botones
+{
+	background: white;
+	border:5px solid red;
+	margin-left: -4px;
+	margin-bottom: -4px;	
+	padding: 100px;
+
 }

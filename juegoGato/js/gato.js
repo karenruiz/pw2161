@@ -13,19 +13,17 @@ function acciones(boton)
   {
    text="O";
   }
-  boton.value=text;
-  alert(boton.value);
-  boton.appendChild(document.createTextNode(text));
-  con++;
-  asignation(text,boton);
-}else
-{
-//  alert("Yei!!!");
-//  alert(boton.value);
-}
+  if(boton.value=="")
+  {
+    boton.value=text;
+    boton.appendChild(document.createTextNode(text));
+    con++;
+    asignation(text,boton);
+  }
 }
 
 function asignation(text,boton){
+
  if(b1==boton.name){
   b1=text;
  }
@@ -55,6 +53,7 @@ function asignation(text,boton){
  }
  validation(text);
 }
+ 
 function validation(text){
  if((b1==b2 && b2==b3)||(b1==b5 && b5==b9)||(b3==b5 && b5==b7)||(b4==b5 && b5==b6)||(b7==b8 && b8==b9)||(b1==b4 && b4==b7)||(b2==b5 && b5==b8)||(b3==b6 && b6==b9)){
   var con=confirm("'"+ text+"'"+" Haz ganado\n");
