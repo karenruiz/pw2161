@@ -1,30 +1,51 @@
-var turno = false;
-var letraCasilla="";
-var cuentaJuego=0;
-var cuentaJugadas=0;
+//Variables
+var turno =false;
+var letraCasilla ="";
+var cuentaJuego =0;
+var cuentaJugadas =0;
 
 function iniciaGato()
 {
-
+	//Eliminar la variable de localStorage
+	// localStorage.removeItem("webCuentaJuego");
+	//Preguntar si el navegador es compatible con localStorage.
+	if(typeof(Storage) != "undefined")
+	{
+		if(localStorage.webCuentaJuego)
+		{
+			cuentaJuego=parseInt(localStorage.webCuentaJuego);
+			cuentaJuego=cuentaJuego + 1;
+		}
+		else
+		{
+			cuentaJuego = 1;
+		}
+		document.getElementById("tituloJuego").innerHTML=
+		"Juego del Gato (#"+cuentaJuego+")";
+	}
+	else
+	{
+		alert("¡Utiliza un navegador actualizado!")
+	}
 }
 
-validaJugada(letra)
+function validaJugada(letra)
 {
 	var ganador=false;
 	var b11=document.getElementById("unouno").innerHTML;
-	var b11=document.getElementById("unodos").innerHTML;
-	var b11=document.getElementById("unotres").innerHTML;
-	var b11=document.getElementById("dosuno").innerHTML;
-	var b11=document.getElementById("dosdos").innerHTML;
-	var b11=document.getElementById("dostres").innerHTML;
-	var b11=document.getElementById("tresuno").innerHTML;
-	var b11=document.getElementById("tresdos").innerHTML;
-	var b11=document.getElementById("trestres").innerHTML;
+	var b12=document.getElementById("unodos").innerHTML;
+	var b13=document.getElementById("unotres").innerHTML;
+	var b21=document.getElementById("dosuno").innerHTML;
+	var b22=document.getElementById("dosdos").innerHTML;
+	var b23=document.getElementById("dostres").innerHTML;
+	var b31=document.getElementById("tresuno").innerHTML;
+	var b32=document.getElementById("tresdos").innerHTML;
+	var b33=document.getElementById("trestres").innerHTML;
 
 	//Jugadas
 
 	//Renglones
-	if(b11==b12&&b12==b13&&b11!="&nbsp;")
+	if(b11==b12 && b12==b13 && b11!="&nbsp;")
 	ganador = true;
 	if(b21==b22&&b12==b23&&b21!="&nbsp;")
 	ganador = true;
@@ -38,6 +59,7 @@ validaJugada(letra)
 	ganador = true;
 	if(b13==b23&&b23==b33&&b13!="&nbsp;")
 	ganador = true;
+
 	//Diagonales
 	if(b11==b12&&b22==b33&&b11!="&nbsp;")
 	ganador = true;
@@ -45,29 +67,37 @@ validaJugada(letra)
 	ganador = true;
 
 	//¿Alguien ganó?
-	if(gandor ==true) //if(ganador)
+	if(ganador==true) //if(ganador)
 	{
 		alert("!Ganador"+letra+"!");
+		localStorage.webCuentaJuego=cuentaJuego;
 	}
-	else if(ganador == false && cuentaJugadas ==9)
+	else if(ganador==false&&cuentaJugadas==9)
 	{
 		alert("!Empate¡");
+		localStorage.webCuentaJuego=cuentaJuego;
 	}
 }
 
 function escribe(casilla)
 {
 	var letra="";
-	letraCasilla= document.getElementaryId(casilla).innerHTML;
+	letraCasilla= document.getElementById(casilla).innerHTML;
 	//if(letraCasilla == "&letraCasilla!="0")
 	if(letraCasilla !="X"&& letraCasilla!="O")
 	{
 		if(turno==false) //if(!turno)
+		{
 			letra="X";
+		}
+			
 		else
+		{
 			letra="O";
-		document.getElementaryId(casilla).innerHTMl=letra;
-		turno =!turno; //turno=true;
+		}
+			
+		document.getElementById(casilla).innerHTML=letra;
+		turno= !turno; //turno=true;
 	}
 	cuentaJugadas=cuentaJugadas+1;
 	//Para saber quien ganó, validamos la jugada
