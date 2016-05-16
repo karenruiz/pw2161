@@ -35,7 +35,13 @@ var iniciaApp =function()
 				url:"php/funciones.php",
 				data: parametros,
 				success: function(response){
-
+					if(response.respuesta==true)
+					{
+						$("#datosUsuario").hide();
+						$("nav").show("slow");
+					}
+					else
+						alert("Nombrte de usuario y/o contraseña incorrecto(s)");
 				},
 				error:function(xhr,ajaxOptionx,thronwError){
 					console.log("Algo salió mal :s")
