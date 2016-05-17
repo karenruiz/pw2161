@@ -41,7 +41,7 @@ var iniciaApp =function()
 						$("nav").show("slow");
 					}
 					else
-						alert("Nombrte de usuario y/o contraseña incorrecto(s)");
+						alert("Nombre de usuario y/o contraseña incorrecto(s)");
 				},
 				error:function(xhr,ajaxOptionx,thronwError){
 					console.log("Algo salió mal :s")

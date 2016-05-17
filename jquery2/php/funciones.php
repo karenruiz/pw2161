@@ -41,7 +41,7 @@ function validaEntrada()
 	if(mysql_num_rows($resultado) > 0)
 	
 		$respuesta=true;
-	$salidaJSON = $arrayName = array('respuesta' => $respuesta);
+	$salidaJSON = array('respuesta' => $respuesta);
 	//Devolvemos el resultado al JS
 	print json_encode($salidaJSON);
 
