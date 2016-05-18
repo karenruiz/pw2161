@@ -44,7 +44,7 @@ var iniciaApp =function()
 						alert("Nombre de usuario y/o contraseña incorrecto(s)");
 				},
 				error:function(xhr,ajaxOptionx,thronwError){
-					console.log("Algo salió mal :s")
+					console.log("Algo salió mal :s");
 				}
 			});
 
@@ -60,6 +60,48 @@ var iniciaApp =function()
 
 		console.log("Se disparó el submit :(")
 	}
-	$("#frmValidaEntrada").on("submit",validaEntrada)
+
+	var Altas =function()
+	{
+		//Mostramos el formulario
+		$("#altaUsuarios").show("slow");
+	}
+
+	var AltaUsuarios=function()
+	{
+		event.preventDefault();
+		//alert($("#frmAltaUsuarios").serialize());
+		var datos=$("#frmAltaUsuarios").serialize();
+		var parametros = "accion=guardaUsuario&"+datos+
+						 "&id"+Math.random();
+		$.ajax({
+			beforeSend:function(){
+				console.log("Guardar al usuario");
+			},
+			cache: false,
+			type: "POST",
+			dataType:"json",
+			url:"php/funciones.php",
+			data: parametros,
+			success: function(response){
+				if(response.respuesta==true)
+				{
+					alert("Usuario registrado correctamente");
+				}
+				else
+				{
+					alert("No se pudo guardar la información");
+				}
+			},
+			error:function(xhr,ajaxOptionx,thronwError){
+				console.log("Algo salió mal :s")
+			}
+		});
+
+	}
+
+	$("#frmValidaEntrada").on("submit",validaEntrada);
+	$("#btnAltas").on("click",Altas);
+	$("#frmAltaUsuarios").on("submit",AltaUsuarios);
 }
 $(document).on("ready",iniciaApp);

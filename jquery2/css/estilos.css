@@ -14,12 +14,23 @@ header nav ul li
 {
 	display: inline-block;
 }
+
 header nav ul li button
 {
 	width:89px;
 }
+
+#altaUsuarios
+{
+	display:none;
+	margin :0 auto;
+	width: 320px;
+}
+
 #datosUsuario
 {
 	margin:9 auto;
 	width:320px; 
 }
+
+
